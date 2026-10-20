@@ -8,3 +8,7 @@ Código de estado: 200
 
 tras la ruta que no existe: codigo 500
 
+
+Index incluye toda la página principal. Tarifas y reservas son páginas enlazadas con una función específica. 
+
+Todas tienen pequeños fragmentos de css en un inicio.
