@@ -5,64 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda libre | reservas</title>
     <style>
-        nav { position: sticky; top: 0; background: #FCF7E0; z-index: 10; }
         header { position: sticky; top: 0; background: #FCF7E0; z-index: 10; }
     </style>
 </head>
 <body>
     <header>
-      <h1>Rueda Libre | Reservas</h1>
+        <h1>Rueda Libre | Reservas</h1>
+        <img src="../img/logo.jpeg" alt="" width="300">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="tarifas.html">Tarifas</a>
+            <a href="reservas.html">Reservar ahora</a>
+        </nav>
     </header>
-    <img src="../img/logo.jpeg" alt="" width="300">
-    <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="tarifas.html">Tarifas</a>
-        <a href="reservas.html">Reservar ahora</a>
-    </nav>
-<form action="#" method="post">
-    <fieldset>
-    <legend><strong>Reserva tu bici</strong></legend>
+<main>
+    <form action="#" method="post">
+        <fieldset>
+        <legend><strong>Reserva tu bici</strong></legend>
 
-        <p>
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </p> 
-        <p>
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" name="correo" required>
-        </p>
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required>
-        <p>
-            <label for="servicio">Servicio</label>
-            <select id="servicio" name="servicio" required>
-              <option value="" disabled selected>Elige una opción</option>
-              <option value="alquiler">Alquiler de bicicleta</option>
-              <option value="recorrido">Recorrido guiado</option>
-            </select>
-        </p>
-        <p>
-            <label for="fecha">Fecha</label>
-            <input type="date" id="fecha" name="fecha" required>
-        </p>
-        <p>
-            <label for="personas">Número de personas</label>
-            <input type="number" id="personas" name="personas" min="1" max="10" value="1" required>
-        </p>
-        <p>
-            <label for="comentarios">Comentarios</label>
-            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
-        </p>
-        <p>
-            <label>
-              <input type="checkbox" name="terminos" required>
-              Acepto las condiciones de reserva
-            </label>
-        </p>
-  </fieldset>
+            <p>
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </p> 
+            <p>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+            </p>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            <p>
+                <label for="servicio">Servicio</label>
+                <select id="servicio" name="servicio" required>
+                  <option value="" disabled selected>Elige una opción</option>
+                  <option value="alquiler">Alquiler de bicicleta</option>
+                  <option value="recorrido">Recorrido guiado</option>
+                </select>
+            </p>
+            <p>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </p>
+            <p>
+                <label for="personas">Número de personas</label>
+                <input type="number" id="personas" name="personas" min="1" max="10" value="1" required>
+            </p>
+            <p>
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </p>
+            <p>
+                <label>
+                  <input type="checkbox" name="terminos" required>
+                  Acepto las condiciones de reserva
+                </label>
+            </p>
+      </fieldset>
 
-  <button type="submit">Enviar reserva</button>
-</form>
+      <button type="submit">Enviar reserva</button>
+    </form>
+</main>
     <footer>
         <p><strong>Rueda Libre</strong></p>
         <p><a href="mailto:hola@ruedalibre.co">hola@ruedalibre.co</a></p>
