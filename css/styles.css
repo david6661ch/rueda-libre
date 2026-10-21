@@ -67,6 +67,10 @@ a{
 }
 a.boton-cta button{
     color: var(--color-verde-ruta);
+    border-bottom: 3px solid var(--color-verde-ruta);
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-size: 16px;
 }
 a.boton-cta button:hover{
     background-color: var(--color-verde-ruta);
@@ -77,8 +81,17 @@ a.boton-cta button:focus{
     outline-offset: 2px;
 }
 footer{
-    background-color: var(--color-naranja-pedal);
+    color: var(--color-azul-noche);
 }
 p{
     color:var(--color-gris-asfalto);
+}
+td, th{
+    padding: 15px 30px;
+    border-radius: 6px;
+    border-color: var(--color-naranja-pedal);
+    border-size:2px;
+}
+caption {
+    font-weight: 600;
 }
