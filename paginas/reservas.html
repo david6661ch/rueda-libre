@@ -19,36 +19,81 @@
         </nav>
     </header>
 <main>
-    <form action="#" method="post">
-        <fieldset>
-        <legend><strong>Reserva tu bici</strong></legend>
+    <article>
+        <h2>Reserva tu bici en pocos minutos</h2>
+            <p>Completa el formulario con tus datos y los de tu alquiler, y nosotros te confirmaremos por correo o celular. Así evitamos errores de fecha y datos incompletos, y podemos tener lista tu bicicleta con casco y candado. <em>Todas las reservas quedan sujetas a disponibilidad.</em></p>
+            <p>¿Dudas con los precios? Consulta primero nuestras <a href="tarifas.html">tarifas</a>.</p>
+    </article>
+    <article>
+        <h2>Cómo funciona</h2>
+            <ol>
+                <li>Completa el formulario con tus datos y los de tu alquiler.</li>
+                <li>Recibe nuestra confirmación por correo o celular.</li>
+                <li>Preséntate en la sede con tu documento de identidad.</li>
+                <li>Recibe tu bici con casco y candado, y a pedalear.</li>
+            </ol>
+    </article>
+    <fieldset action="#" method="post">
+        <legend><h2>Tus datoos</h2></legend>
 
             <p>
                 <label for="nombre">Nombre completo</label>
                 <input type="text" id="nombre" name="nombre" required>
             </p> 
             <p>
+                <label for="documento">Número de documento</label>
+                <input type="text" id="documento" name="documento" inputmode="numeric" pattern="[0-9]{6,10}" maxlength="10" title="Solo números, entre 6 y 10 dígitos" required>
+            </p>
+            <p>
                 <label for="correo">Correo electrónico</label>
                 <input type="email" id="correo" name="correo" required>
             </p>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required>
             <p>
-                <label for="servicio">Servicio</label>
-                <select id="servicio" name="servicio" required>
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" inputmode="numeric" pattern="3[0-9]{9}" maxlength="10" title="Celular de 10 dígitos que empieza por 3" required>
+            </p>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Tu alquiler</h2></legend>
+            <p>
+                <label for="fecha">Fecha del alquiler</label>
+                <input type="date" id="fecha" name="fecha" inputmode="numeric" required>
+            </p>
+            <p>
+                <label for="tipo-de-bicicleta">Tipo de bicicleta</label>
+                <select id="tipo-de-bicicleta" name="tipo-de-bicicleta" required>
                   <option value="" disabled selected>Elige una opción</option>
-                  <option value="alquiler">Alquiler de bicicleta</option>
-                  <option value="recorrido">Recorrido guiado</option>
+                  <option value="urbana">Urbana</option>
+                  <option value="montana">Montaña</option>
+                  <option value="electrica">Eléctrica</option>
                 </select>
             </p>
             <p>
-                <label for="fecha">Fecha</label>
-                <input type="date" id="fecha" name="fecha" required>
+                <label for="plan">Elige tu plan</label>
+                <select id="plan" name="plan" required>
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="hora">Una hora </option>
+                    <option value="medio-dia">Medio día </option>
+                    <option value="dia-completo">Día completo</option>
+                </select>
             </p>
             <p>
-                <label for="personas">Número de personas</label>
-                <input type="number" id="personas" name="personas" min="1" max="10" value="1" required>
+                <label for="bicicletas">Cantidad de bicicletas</label>
+                <input type="number" id="bicicletas" name="bicicletas" min="1" max="10" value="1" required>
             </p>
+            <p>
+                <label for="recorrido">Elige un recorrido</label>
+                <select id="recorrido" name="recorrido" required>
+                    <option value="" disabled selected>Elige una opción</option>
+                    <option value="ninguno">Ninguno</option>
+                    <option value="rio-y-parques">Río y Parques </option>
+                    <option value="sabores-de-barrio">Sabores de Barrio</option>
+                    <option value="reto-las-palmas">Reto Las Palmas</option>
+                </select>
+            </p>
+    </fieldset>
+    <fieldset>
+        <legend><h2>Confirmación</h2></legend>
             <p>
                 <label for="comentarios">Comentarios</label>
                 <textarea id="comentarios" name="comentarios" rows="4"></textarea>
@@ -56,17 +101,19 @@
             <p>
                 <label>
                   <input type="checkbox" name="terminos" required>
-                  Acepto las condiciones de reserva
+                  Acepto las políticas de alquiler
                 </label>
             </p>
-      </fieldset>
+            <button type="submit">Enviar reserva</button>
+    </fieldset>
 
-      <button type="submit">Enviar reserva</button>
+      
     </form>
 </main>
     <footer>
         <p><strong>Rueda Libre</strong></p>
-        <p><a href="mailto:hola@ruedalibre.co">hola@ruedalibre.co</a></p>
+        <h2>¿Necesitas ayuda?</h2>
+            <p>Escríbenos a <a href="mailto:hola@ruedalibre.co">hola@ruedalibre.co</a> y te respondemos lo antes posible.</p>
         <p><small>&copy; 2026</small></p>
     </footer>
 </body>
