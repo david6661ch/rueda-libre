@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda libre | reservas</title>
-    <style>
-        header { position: sticky; top: 0; background: #FCF7E0; z-index: 10; }
-    </style>
+    <link rel="body" href="https://fonts.googleapis.com">
+    <link rel="body" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css"> 
 </head>
 <body>
     <header>
-        <h1>Rueda Libre | Reservas</h1>
-        <img src="../img/logo.jpeg" alt="" width="300">
-        <nav>
-            <a href="../index.html">Inicio</a>
-            <a href="tarifas.html">Tarifas</a>
-            <a href="reservas.html">Reservar ahora</a>
-        </nav>
+        <fieldset id="menu-navegacion">
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="tarifas.html">Tarifas</a>
+                <a id="actual" href="reservas.html">Reservar ahora</a>
+            </nav>
+        </fieldset>
     </header>
+    <img src="../img/logo.jpeg" alt="" width="300">
 <main>
+    <h1>Haz tu reserva</h1>
     <article>
         <h2>Reserva tu bici en pocos minutos</h2>
             <p>Completa el formulario con tus datos y los de tu alquiler, y nosotros te confirmaremos por correo o celular. Así evitamos errores de fecha y datos incompletos, y podemos tener lista tu bicicleta con casco y candado. <em>Todas las reservas quedan sujetas a disponibilidad.</em></p>
@@ -34,7 +37,7 @@
             </ol>
     </article>
     <fieldset action="#" method="post">
-        <legend><h2>Tus datoos</h2></legend>
+        <legend><h2>Tus datos</h2></legend>
 
             <p>
                 <label for="nombre">Nombre completo</label>

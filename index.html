@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
-    <style>
-        header { position: sticky; top: 0; background: #FCF7E0; z-index: 10; }
-
-    </style>
+    <!--fuente de letra-->
+    <link rel="body" href="https://fonts.googleapis.com">
+    <link rel="body" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
-<body> 
+<body class="open-sans-body"> 
     <header>
-        <h1>Rueda Libre | Alquiler de bicicletas en Medellín</h1>
-        <img src="img/logo.jpeg" alt="" width="300">
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="paginas/tarifas.html">Tarifas</a>
-            <a href="paginas/reservas.html">Reservar ahora</a>     
-        </nav>
+        <fieldset id="menu-navegacion">
+            <nav id="menu">
+                <a id="actual" href="index.html">Inicio</a>
+                <a href="paginas/tarifas.html">Tarifas</a>
+                <a href="paginas/reservas.html">Reservar ahora</a>     
+            </nav>
+        </fieldset>
     </header>
-    
+        <img src="img/logo.jpeg" alt="" width="300">
+
     
     <aside>
         <details>
@@ -41,7 +43,8 @@
             <li><a href="#encuentranos">Encuéntranos</a></li>
         </details>
     </aside>
-    <main>            
+    <main>    
+        <h1 class="montserrat-titles">Alquiler de bicicletas en Medellín</h1>        
         <section>Medellín se recorre mejor en dos ruedas. En Rueda Libre te damos la bici, tú pones las ganas de explorar. Alquila por horas, 
             por un día o por toda tu estadía y conéctate con la ciudad de la eterna primavera <em>a tu ritmo</em>: desde una rodada tranquila 
             por Ciudad del Río y el Poblado, hasta una subida con adrenalina al Alto de Las Palmas. Bicicletas listas, cascos, candado 

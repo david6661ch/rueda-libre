@@ -1,0 +1,69 @@
+:root {
+    /* paleta de colores*/
+    --color-verde-ruta: #1E7A4F;
+    --color-naranja-pedal: #F39A2B;
+    --color-azul-noche: #14213D;
+    --color-crema: #FAF6EF;
+    --color-gris-asfalto: #5B6470;
+
+
+    /* fuentes principales*/
+    --fuente-titulo: "Montserrat", Arial, sans-serif;
+    --fuente-texto: "Open sans", Arial, sans-serif;
+
+    /* espaciados*/
+    --espaciado-s: 0.5rem;
+    --espaciado-m: 1rem;
+    --espaciado-l: 1.5rem;
+}
+body{
+    background-color: var(--color-crema);
+}
+
+header{
+    position: sticky;
+    top: 4px;
+    background-color: var(--color-crema);
+    z-index: 10;
+    color:var(--color-azul-noche);
+    padding: var(--espaciado-m);
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+header nav a {
+    color: var(--color-azul-noche);
+    text-decoration: none;
+    font-weight: 700;
+    padding: var(--espaciado-s) var(--espaciado-m);
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+h1,h2,h3{
+    font-family: var(--fuente-titulo);
+    color:var(--color-azul-noche);
+}
+main{
+    font-family: var(--fuente-texto);
+}
+a{
+    color: var(--color-verde-ruta);
+}
+footer{
+    background-color: var(--color-naranja-pedal);
+}
+details{
+    color: var(--color-naranja-pedal);
+}
+strong{
+    color: var(--color-naranja-pedal);
+}
+button{
+    background-color: var(--color-verde-ruta);
+    color: var(--color-crema);
+}
+p{
+    color:var(--color-gris-asfalto);
+}
+#actual { color: var(--verde-ruta); font-weight: 600; }
