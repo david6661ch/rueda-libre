@@ -52,7 +52,7 @@ nav.menu {
     gap: var(--espaciado-m);
     padding: var(--espaciado-s);
 }
-nav.menu a {
+  nav.menu a {
     color: var(--color-azul-noche);
     font-family: var(--fuente-titulo);
     font-weight: 600;
