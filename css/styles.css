@@ -168,7 +168,6 @@ caption {
     border: 1px solid var(--color-gris-asfalto);
     border-radius: 0.75rem;
     margin-bottom: var(--espaciado-l);
-    width: 20rem;
 }
 
 .tarjeta figure {
