@@ -15,6 +15,7 @@
     --espaciado-s: 0.5rem;
     --espaciado-m: 1rem;
     --espaciado-l: 1.5rem;
+    --espaciado-cl: 2rem;
 }
 body{
     background-color: var(--color-crema);
@@ -59,7 +60,6 @@ nav.menu a {
     padding: var(--espaciado-s) var(--espaciado-m);
     border-radius: 6px;
 }
-
 nav.menu a:hover {
     background-color: var(--color-naranja-pedal);
     color: var(--color-azul-noche);
@@ -69,13 +69,13 @@ nav.menu a:focus {
     outline: 3px solid var(--color-verde-ruta);
     outline-offset: 2px;
 }
-
 nav.menu a.actual {
     border-bottom: 3px solid var(--color-verde-ruta);
 }
 body > header {
     padding: var(--espaciado-m);
     text-align: center;
+    background-color: var(--color-azul-noche);
 }
 h1,h2,h3{
     font-family: var(--fuente-titulo);
@@ -121,7 +121,12 @@ button.boton-formulario:focus{
     outline-offset: 2px;
 }
 footer{
-    color: var(--color-azul-noche);
+    background-color: var(--color-azul-noche);
+    color: var(--color-cremas);
+}
+footer > h2,
+footer > p{
+    color: var(--color-crema)
 }
 p{
     color:var(--color-gris-asfalto);
@@ -169,25 +174,18 @@ caption {
     border-radius: 0.75rem;
     margin-bottom: var(--espaciado-l);
 }
-
 .tarjeta figure {
     margin: 0;
 }
-
 .tarjeta img {
     display: block;
     width: 100%;
     height: auto;
 }
-
-section.portada {
-    min-height: 60vh;
-}
 label {
     display: block;
     margin-bottom: var(--espaciado-s);
 }
-
 input, select, textarea {
     width: 100%;
     padding: var(--espaciado-s);
@@ -204,4 +202,30 @@ fieldset {
 
 button.boton-formulario {
     padding: var(--espaciado-m) var(--espaciado-l);
+}
+aside {
+    background-color: var(--color-azul-noche);
+    color: var(--color-crema)
+}
+a.boton-flotante {
+    position: fixed;
+    right: var(--espaciado-l);
+    bottom: var(--espaciado-l);
+    z-index: 20;
+    background-color: var(--color-verde-ruta);
+    color: var(--color-crema);
+    padding: var(--espaciado-m) var(--espaciado-l);
+    border-radius: 2rem;
+    font-family: var(--fuente-titulo);
+    font-weight: 600;
+}
+
+a.boton-flotante:hover {
+    background-color: var(--color-naranja-pedal);
+    color: var(--color-azul-noche);
+}
+
+a.boton-flotante:focus {
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 2px;
 }
