@@ -5,28 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
     <!--fuente de letra-->
-    <link rel="body" href="https://fonts.googleapis.com">
-    <link rel="body" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css"> 
 </head>
 <body class="open-sans-body"> 
     <header>
-        <fieldset >
-            <nav class="menu">
-                <a class="actual" href="index.html">Inicio</a>
-                <a href="paginas/tarifas.html">Tarifas</a>
-                <a href="paginas/reservas.html">Reservar ahora</a>  
-                <a href="#encuentranos">Encuéntranos</a>  
-            </nav>
-        </fieldset>
+        <img src="img/logo.jpeg" alt="Logo de Rueda Libre" width="300">
     </header>
-        <img src="img/logo.jpeg" alt="" width="300">
-
-    
+    <nav class="menu">
+        <a class="actual" href="index.html">Inicio</a>
+        <a href="paginas/tarifas.html">Tarifas</a>
+        <a href="paginas/reservas.html">Reservar ahora</a>
+        <a href="#encuentranos">Encuéntranos</a>
+    </nav> 
     <aside>
         <details>
             <summary>Menú</summary>
+            <ul>
             <li><a href="#quienes-somos">Quiénes somos</a></li>
             <li><a href="#nuestros-servicios">Nuestros servicios</a>
                 <ul>
@@ -42,14 +37,17 @@
                 </ul>
             </li>
             <li><a href="#encuentranos">Encuéntranos</a></li>
+            </ul>
         </details>
     </aside>
     <main>    
-        <h1 class="montserrat-titles">Alquiler de bicicletas en Medellín</h1>        
-        <section>Medellín se recorre mejor en dos ruedas. En Rueda Libre te damos la bici, tú pones las ganas de explorar. Alquila por horas, 
+           
+        <section class="portada">
+            <h1 class="montserrat-titles">Alquiler de bicicletas en Medellín</h1>     
+            <p>Medellín se recorre mejor en dos ruedas. En Rueda Libre te damos la bici, tú pones las ganas de explorar. Alquila por horas, 
             por un día o por toda tu estadía y conéctate con la ciudad de la eterna primavera <em>a tu ritmo</em>: desde una rodada tranquila 
             por Ciudad del Río y el Poblado, hasta una subida con adrenalina al Alto de Las Palmas. Bicicletas listas, cascos, candado 
-            y las mejores rutas recomendadas por locales. ¿Listo para pedalear?</section>
+            y las mejores rutas recomendadas por locales. ¿Listo para pedalear?</p></section>
         <h2>Todo lo que necesitas para rodar</h2>
             <ol>
                 <li><a href="#quienes-somos">Quiénes somos</a></li>
@@ -75,21 +73,33 @@
                 <p>Ponemos a tu disposición bicicletas urbanas, de montaña y eléctricas, cascos y candados, además de recorridos guiados por personas que viven aquí y te muestran los rincones que no salen en las guías turísticas. Nuestro taller básico mantiene todo en orden para que solo te preocupes por pedalear.</p>
                 <p><em>Nuestra misión es acercarte a la ciudad de la eterna primavera de una forma segura, flexible y cercana.</em></p>
         </article>
-        <article>
+        <section>
             <h2 id="nuestros-servicios">Nuestros servicios</h2>   
-                <h3>Alquiler de bicicletas</h3>
+            <article class="tarjeta">
+                <header><h3>Alquiler de bicicletas</h3></header>
+                <figure>
+                    <img src="img/bici.png" alt="Describe lo que se ve en la foto">
+                </figure>
                     <p>Elige la bici que mejor se adapte a ti y alquílala por horas, por día o por toda tu estadía. <strong>Todas incluyen casco y candado</strong>, para que solo te preocupes por disfrutar Medellín a tu ritmo, desde una rodada tranquila por Ciudad del Río hasta una subida con adrenalina al Alto de Las Palmas.</p>
                     <p class="consejo"><strong><em>Consejo:</em></strong> lleva tu documento de identidad y revisa la bici antes de salir (frenos, llantas y cambios). Usa siempre el casco y el candado, y no dejes la bici sin asegurar, ni siquiera por un momento.</p>
-        
-                <h3>Recorridos guiados</h3>
+            </article>
+            <article class="tarjeta">
+                <header><h3>Recorridos guiados</h3></header>
+                <figure>
+                    <img src="img/bici.png" alt="Describe lo que se ve en la foto">
+                </figure>
                     <p>Descubre la ciudad de la mano de quienes la conocen mejor. Nuestros guías locales te llevan por las rutas más bonitas y seguras, te cuentan la historia de cada lugar y te muestran rincones que no aparecen en las guías turísticas. <strong>Ideal si es tu primera vez en Medellín o si prefieres pedalear acompañado.</strong></p>
-
                     <p class="consejo"><strong><em>Consejo:</em></strong> reserva con anticipación, porque los cupos son limitados. Lleva agua, protector solar y ropa cómoda, y llega unos minutos antes para ajustar tu bici con calma.</p>
-
-                <h3>Taller básico</h3>
+            </article>
+            <article class="tarjeta">
+                <header><h3>Taller básico</h3></header>
+                <figure>
+                    <img src="img/bici.png" alt="Describe lo que se ve en la foto">
+                </figure>
                     <p>Si tu bici necesita un ajuste rápido, aquí te ayudamos. <strong>Revisamos frenos, cambios y presión de las llantas, lubricamos la cadena y resolvemos pinchazos y otros arreglos sencillos</strong>, para que sigas rodando seguro y sin perder tiempo.</p>
-                    <p class="consejo"><strong><em>Advertencia:</em></strong> el taller cubre arreglos sencillos. Si tu bici tiene daños mayores, como un cuadro doblado o una falla seria en los frenos, no la uses y consulta con un taller especializado.</p>    
-        </article>
+                    <p class="consejo"><strong><em>Advertencia:</em></strong> el taller cubre arreglos sencillos. Si tu bici tiene daños mayores, como un cuadro doblado o una falla seria en los frenos, no la uses y consulta con un taller especializado.</p>   
+            </article>
+        </section>
         <article>
             <h2 id="como-alquilar">Cómo alquilar y nuestros beneficios</h2>
                 <h3>¿Cómo alquilar?</h3>

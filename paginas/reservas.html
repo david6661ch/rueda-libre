@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda libre | reservas</title>
-    <link rel="body" href="https://fonts.googleapis.com">
-    <link rel="body" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css"> 
 </head>
 <body>
     <header>
-        <fieldset>
-            <nav class="menu">
-                <a href="../index.html">Inicio</a>
-                <a href="tarifas.html">Tarifas</a>
-                <a class="actual" href="reservas.html">Reservar ahora</a>
-                <a href="../index.html#encuentranos">Encuéntranos</a>
-            </nav>
-        </fieldset>
+        <img src="../img/logo.jpeg" alt="Logo de Rueda Libre" width="300">
     </header>
-    <img src="../img/logo.jpeg" alt="" width="300">
+    <nav class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="tarifas.html">Tarifas</a>
+        <a class="actual" href="reservas.html">Reservar ahora</a>
+        <a href="../index.html#encuentranos">Encuéntranos</a>
+    </nav>
 <main>
     <h1>Haz tu reserva</h1>
     <article>
@@ -37,7 +33,8 @@
                 <li>Recibe tu bici con casco y candado, y a pedalear.</li>
             </ol>
     </article>
-    <fieldset action="#" method="post">
+    <form action="#" method="post">
+    <fieldset>
         <legend><h2>Tus datos</h2></legend>
 
             <p>
@@ -110,7 +107,7 @@
                 </label>
             </p>        
     </fieldset>
-    <button type="submit">Enviar reserva</button>
+    <button class="boton-formulario" type="submit">Enviar reserva</button>
     </form>
 </main>
     <footer>
