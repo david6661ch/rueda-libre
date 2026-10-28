@@ -17,3 +17,14 @@
     --espaciado-l: 1.5rem;
     --espaciado-xl: 2rem;
 }
+body {
+    font-family: var(--fuente-texto);
+}
+h1,h2,h3{
+    font-family: var(--fuente-titulo);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
