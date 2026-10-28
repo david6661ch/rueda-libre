@@ -17,8 +17,9 @@
     --espaciado-l: 1.5rem;
     --espaciado-xl: 2rem;
 }
-body {
+main {
     font-family: var(--fuente-texto);
+    color: var(--color-azul-noche);
 }
 h1,h2,h3{
     font-family: var(--fuente-titulo);
@@ -27,4 +28,68 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+details {
+    border: 1px solid var(--color-gris-asfalto);
+    border-radius: 0.75rem;
+    padding: var(--espaciado-s) var(--espaciado-m);
+    margin-bottom: var(--espaciado-l);
+}
+summary {
+    cursor: pointer;
+    font-family: var(--fuente-titulo);
+    font-weight: 600;
+    color: var(--color-azul-noche);
+    
+}
+#menu {
+    list-style: none;
+}
+summary:hover {
+    color: var(--color-verde-ruta);
+}
+summary:focus {
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 2px;
+}
+details[open] summary {
+    margin-bottom: var(--espaciado-s);
+}
+#menu a { 
+    color: var(--color-gris-asfalto); 
+}
+#menu a.activo { 
+    color: var(--color-verde-ruta); font-weight: 600; 
+}
+a.boton-cta{
+    color: var(--color-verde-ruta);
+    border-bottom: 3px solid var(--color-verde-ruta);
+    border-radius: 6px;
+    padding: 15px 30px;
+    font-size: 16px;
+}
+a.boton-cta:hover{
+    background-color: var(--color-verde-ruta);
+    color: var(--color-crema);
+}
+a.boton-cta:focus{
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 2px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 2px;
+    border-color: var(--color-verde-ruta);
+}
+input[type="checkbox"]:focus {
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 3px;
+}
+button.boton-formulario:focus,
+#menu a:focus,
+a.boton-flotante:focus {
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 2px;
 }

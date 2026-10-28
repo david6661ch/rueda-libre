@@ -9,14 +9,17 @@
 </head>
 <body>
     <header>
-        <img src="../img/logo.jpeg" alt="Logo de Rueda Libre" width="300">
+        <img src="../img/logo.jpeg" alt="Logo de Rueda Libre">
+        <details class="navegacion">
+            <summary>Menú</summary>
+          <ul id="menu">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="tarifas.html">Tarifas</a></li>
+              <li><a class="activo" href="reservas.html">Reservas</a></li>
+        </ul>
+        </details>
     </header>
-    <nav class="menu">
-        <a href="../index.html">Inicio</a>
-        <a href="tarifas.html">Tarifas</a>
-        <a class="actual" href="reservas.html">Reservar ahora</a>
-        <a href="../index.html#encuentranos">Encuéntranos</a>
-    </nav>
+    
 <main>
     <h1>Haz tu reserva</h1>
     <article>
@@ -98,7 +101,7 @@
         <legend><h2>Confirmación</h2></legend>
             <p>
                 <label for="comentarios">Comentarios</label>
-                <textarea id="comentarios" name="comentarios" maxlength="300" rows="10"></textarea>
+                <textarea id="comentarios" name="comentarios" maxlength="300" rows="1"></textarea>
             </p>
             <p>
                 <label>
