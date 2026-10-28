@@ -27,11 +27,6 @@ body > nav,
 body > footer {
     flex: 0 0 100%;
 }
-
-body > aside {
-    flex: 0 0 15rem;
-}
-
 body > main {
     flex: 1 1 30rem;
     max-width: 60rem;
