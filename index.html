@@ -10,11 +10,11 @@
 </head>
 <body class="open-sans-body"> 
     <header>
-        <img src="img/logo.jpeg" alt="Logo de Rueda Libre">
+        <img id="logo" src="img/logo.jpeg" alt="Logo de Rueda Libre">
         <details class="navegacion">
             <summary>Menú</summary>
           <ul id="menu">
-              <li><a class="activo" href="../index.html">Inicio</a></li>
+              <li><a class="activo" href="index.html">Inicio</a></li>
               <li><a href="paginas/tarifas.html">Tarifas</a></li>
               <li><a href="paginas/reservas.html">Reservas</a></li>
         </ul>
@@ -43,15 +43,70 @@
             <h3>Recorridos guiados</h3>
             <figure><img src="img/recorridos.jpeg" alt=""></figure>
             <p>Descubre la ciudad de la mano de quienes la conocen mejor. Nuestros guías locales te llevan por las rutas más bonitas y seguras, te cuentan la historia de cada lugar y te muestran rincones que no aparecen en las guías turísticas. Ideal si es tu primera vez en Medellín o si prefieres pedalear acompañado.</p>
-            <p><strong>Consejo: </strong>> reserva con anticipación, porque los cupos son limitados. Lleva agua, protector solar y ropa cómoda, y llega unos minutos antes para ajustar tu bici con calma.</p>
+            <p><strong>Consejo: </strong> reserva con anticipación, porque los cupos son limitados. Lleva agua, protector solar y ropa cómoda, y llega unos minutos antes para ajustar tu bici con calma.</p>
         </section>
         <section class="tarjeta">
             <h3>Taller básico</h3>
             <figure>
-                    <img src="img/taller.png" alt="">
-                </figure>
+                <img src="img/taller.png" alt="">
+            </figure>
             <p>Si tu bici necesita un ajuste rápido, aquí te ayudamos. Revisamos frenos, cambios y presión de las llantas, lubricamos la cadena y resolvemos pinchazos y otros arreglos sencillos, para que sigas rodando seguro y sin perder tiempo.</p>
             <p><strong>Advertencia:</strong> el taller cubre arreglos sencillos. Si tu bici tiene daños mayores, como un cuadro doblado o una falla seria en los frenos, no la uses y consulta con un taller especializado.</p>
+        </section>
+    </article>
+    <article class="nuestra-flota">
+        <h2>Nuestra Flota</h2>
+        <section class="tarjeta">           
+            <figure>
+                <img id="img-bicicleta" src="img/urbana-clasica.png" alt="Bicicleta urbana de corte clásico">
+            </figure>
+            <h3>Urbana Clásica</h3>
+            <p>Cómoda y liviana para las ciclorrutas.</p>
+            <p><strong>Precio: cop 10.000 </strong></p>
+            <a class="boton-cta" href="paginas/reservas.html">reservar</a>
+        </section>
+        <section class="tarjeta">
+            <figure>
+                <img id="img-bicicleta" src="img/urbana-plegable.png" alt="Bicicleta urbana compacta y de fácil transporte">
+            </figure>
+            <h3>Urbana Plegable</h3>
+            <p>Se dobla en segundos; ideal para combinar con el metro.</p>
+            <p><strong>Precio: cop 12.000</strong></p>
+            <a class="boton-cta" href="paginas/reservas.html">reservar</a>
+        </section>
+        <section class="tarjeta"><figure>
+                <img id="img-bicicleta" src="img/montana-trail.png" alt="Bicicleta de montaña, ideal para trayectos complicados">
+            </figure>
+            <h3>Montaña Trail</h3>
+            <p>Suspensión delantera y 21 cambios para las subidas.</p>
+            <p><strong>Precio: cop 15.000</strong></p>
+            <a class="boton-cta" href="paginas/reservas.html">reservar</a>
+        </section>            
+        <section class="tarjeta">
+            <figure>
+                <img id="img-bicicleta" src="img/gravel-aventura.png" alt="Bicicleta con un corte más deportivo">
+            </figure>
+            <h3>Gravel Aventura</h3>
+            <p>Para rutas mixtas de asfalto y destapado.</p>
+            <p><strong>Precio: cop 18.000</strong></p>
+            <a class="boton-cta" href="paginas/reservas.html">reservar</a>
+        </section>
+        <section class="tarjeta">
+            <figure>
+                <img id="img-bicicleta" src="img/electrica.png" alt="Bicicleta eléctrica">
+            </figure>
+            <h3>Eléctrica</h3>
+            <p>Asistencia eléctrica con 45 km de autonomía.</p>
+            <p><strong>Precio: cop 25.000</strong></p>
+            <a class="boton-cta" href="paginas/reservas.html">reservar</a>
+        </section>
+        <section class="tarjeta"><figure>
+                <img id="img-bicicleta" src="img/infantil.png" alt="Bicicleta más pequeña, para niños">
+            </figure>
+            <h3>Infantil</h3>
+            <p>Para niños de 6 a 10 años.</p>
+            <p><strong>Precio: cop 8.000</strong></p>
+            <a class="boton-cta" href="paginas/reservas.html">reservar</a>
         </section>
     </article>
     <article class="como-alquilar-nuestros-beneficios">
@@ -82,11 +137,16 @@
     </article>
     </main>
     <footer>
-            <p><strong>Rueda Libre</strong></p>
-        <h2>¿Necesitas ayuda?</h2>
+        <article class="marca"><strong><h2>Rueda Libre</strong></h2></article>
+        <article class="contacto">
+            <h2>¿Necesitas ayuda?</h2>
             <p>Escríbenos a <a href="mailto:hola@ruedalibre.co">hola@ruedalibre.co</a> y te respondemos lo antes posible.</p>
+        </article>
+        <article class="horario">
             <p>Horario de atención: lunes a viernes de 7:00 a. m. a 7:00 p. m.; sábados, domingos y festivos de 6:00 a. m. a 2:00 p. m.</p>
             <p><small>&copy; 2026</small></p>
+        </article> 
     </footer>
+    <a class="boton-flotante" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">Contáctanos</a>
 </body>
 </html>
