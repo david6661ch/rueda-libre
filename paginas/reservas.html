@@ -10,16 +10,12 @@
 <body>
     <header>
         <img id="logo" src="../img/logo.jpeg" alt="Logo de Rueda Libre">
-        <details class="navegacion">
-            <summary>Menú</summary>
-          <ul id="menu">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="tarifas.html">Tarifas</a></li>
-              <li><a class="activo" href="reservas.html">Reservas</a></li>
-        </ul>
-        </details>
     </header>
-    
+    <nav id="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="tarifas.html">Tarifas</a>
+      <a class="activo" href="reservas.html">Reservas</a>
+    </nav>
 <main>
     <h1>Haz tu reserva</h1>
     <article>
@@ -114,11 +110,15 @@
     </form>
 </main>
     <footer>
-            <p><strong>Rueda Libre</strong></p>
-        <h2>¿Necesitas ayuda?</h2>
-            <p>Escríbenos a <a href="mailto:hola@ruedalibre.co"><strong>hola@ruedalibre.co</strong></a> y te respondemos lo antes posible.</p>
+        <article class="marca"><strong><h2>Rueda Libre</strong></h2></article>
+        <article class="contacto">
+            <h2>¿Necesitas ayuda?</h2>
+            <p>Escríbenos a <a href="mailto:hola@ruedalibre.co">hola@ruedalibre.co</a> y te respondemos lo antes posible.</p>
+        </article>
+        <article class="horario">
             <p>Horario de atención: lunes a viernes de 7:00 a. m. a 7:00 p. m.; sábados, domingos y festivos de 6:00 a. m. a 2:00 p. m.</p>
             <p><small>&copy; 2026</small></p>
+        </article> 
     </footer>
     <a class="boton-flotante" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">Contáctanos</a>
 </body>

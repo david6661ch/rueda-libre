@@ -10,15 +10,12 @@
 <body>
     <header>
         <img id="logo" src="../img/logo.jpeg" alt="Logo de Rueda Libre">
-        <details class="navegacion">
-          <summary>Menú</summary>
-          <ul id="menu">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a class="activo" href="tarifas.html">Tarifas</a></li>
-              <li><a href="reservas.html">Reservas</a></li>
-        </ul>
-        </details>
     </header>
+    <nav id="menu">
+      <a href="../index.html">Inicio</a>
+      <a class="activo" href="tarifas.html">Tarifas</a>
+      <a href="reservas.html">Reservas</a>
+    </nav>
     <main>
       <article>
         <h1>Nuestras tarifas</h1>
@@ -38,16 +35,28 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Urbana</th>
+                <th scope="row">Urbana Clásica</th>
                 <td>$10.000</td>
                 <td>$30.000</td>
                 <td>$50.000</td>
               </tr>
               <tr>
-                <th scope="row">Montaña</th>
+                <th scope="row">Urbana plegable</th>
+                <td>$12.000</td>
+                <td>$36.000</td>
+                <td>$60.000</td>
+              </tr>
+              <tr>
+                <th scope="row">Montaña trail</th>
                 <td>$15.000</td>
                 <td>$45.000</td>
                 <td>$70.000</td>
+              </tr>
+              <tr>
+                <th scope="row">Gravel aventura</th>
+                <td>$18.000</td>
+                <td>$54.000</td>
+                <td>$90.000</td>
               </tr>
               <tr>
                 <th scope="row">Eléctrica</th>
@@ -55,10 +64,17 @@
                 <td>$70.000</td>
                 <td>$110.000</td>
               </tr>
+              <tr>
+                <th scope="row">Infantil</th>
+                <td>$8.000</td>
+                <td>$24.000</td>
+                <td>$40.000</td>
+              </tr>
             </tbody>
           </table>
+          <p><a id="boton-cta" href="reservas.html">Reserva ya</a> </p>
           <p class="nota-importante">Todas las tarifas incluyen casco y candado. Los recorridos salen <strong>sábados y domingos a las 7:00 a. m.</strong></p>
-          <a class="boton-cta" href="reservas.html">Reserva ya</a> 
+          
           <h3>Recorridos guiados</h3>
           <table class="tabla-de-datos" id="tabla-recorridos">
             <caption>Distancia, duración, nivel y precio de cada recorrido</caption>
@@ -95,9 +111,11 @@
               </tr>
             </tbody>
           </table>
-          <a class="boton-cta" href="reservas.html">Reserva ya</a> 
+          
           <p class="nota-importante">Todas las tarifas incluyen casco y candado. Los recorridos salen <strong>sábados y domingos a las 7:00 a. m.</strong></p>
-      </article>
+          <p><a id="boton-cta" href="reservas.html">Reserva ya</a> </p>
+        </article>
+
       <article>
         <h3>Qué llevar</h3>
               <ul>
@@ -109,11 +127,15 @@
       </article>
     </main>
     <footer>
-            <p><strong>Rueda Libre</strong></p>
-        <h2>¿Necesitas ayuda?</h2>
+        <article class="marca"><strong><h2>Rueda Libre</strong></h2></article>
+        <article class="contacto">
+            <h2>¿Necesitas ayuda?</h2>
             <p>Escríbenos a <a href="mailto:hola@ruedalibre.co">hola@ruedalibre.co</a> y te respondemos lo antes posible.</p>
+        </article>
+        <article class="horario">
             <p>Horario de atención: lunes a viernes de 7:00 a. m. a 7:00 p. m.; sábados, domingos y festivos de 6:00 a. m. a 2:00 p. m.</p>
             <p><small>&copy; 2026</small></p>
+        </article> 
     </footer>
     <a class="boton-flotante" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">Contáctanos</a>
 </body>
