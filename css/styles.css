@@ -6,7 +6,6 @@
     --color-crema: #FAF6EF;
     --color-gris-asfalto: #5B6470;
 
-
     /* fuentes principales*/
     --fuente-titulo: "Montserrat", Arial, sans-serif;
     --fuente-texto: "Open sans", Arial, sans-serif;
@@ -20,7 +19,14 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+body > header,
+body > nav,
+body > footer {
+    flex: 0 0 100%;
+}
 body {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     font-family: var(--fuente-texto);
     font-size: 1rem;
@@ -77,6 +83,7 @@ details.navegacion summary {
 main {
     padding: var(--espaciado-m);
 }
+/*tarjetas de servicios*/
 article {
     margin-bottom: var(--espaciado-xl);
 }
@@ -91,7 +98,7 @@ article {
 }
 .tarjeta img {
     display: block;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 0.5rem;
 }
@@ -133,4 +140,26 @@ footer {
 footer a{
     color:var(--color-naranja-pedal);
 }
-
+.boton-flotante{
+    position: fixed;
+    bottom: var(--espaciado-m);
+    right: var(--espaciado-m);
+    z-index: 20;
+    display: inline-block;
+    padding: var(--espaciado-m);
+    border: 2px solid var(--color-gris-asfalto);
+    border-radius: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-crema);
+    background-color: var(--color-verde-ruta);
+}
+.boton-flotante:hover{
+    cursor: pointer;
+    background-color: var(--color-naranja-pedal);
+    font-weight: 700;
+}
+.boton-flotante:focus{
+    outline: 4px solid var(--color-azul-noche);
+    outline-offset: 2px;
+}
