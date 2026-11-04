@@ -86,6 +86,21 @@ nav#menu{
 main {
     padding: var(--espaciado-m);
 }
+/*sección exclusiva de index.html 
+parte1, portada*/
+#introduccion{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    background-color: var(--color-verde-ruta);
+    color: var(--color-crema);
+    gap: var(--espaciado-s);
+}
+#introduccion p:first-child{
+    text-align:center;
+    display: flex;
+    align-items: center;
+    padding: var(--espaciado-s);
+}
 /*tarjetas de servicios*/
 #nuestros-servicios {
     display: grid;
@@ -104,7 +119,8 @@ main {
     gap: var(--espaciado-m);
 }
 #imagen-de-servicio,
-#img-bicicleta{
+#img-bicicleta,
+#portada{
     width: 100%;
     object-fit: contain;
 }
