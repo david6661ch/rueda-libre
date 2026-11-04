@@ -42,9 +42,12 @@ body {
 /*header*/
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: var(--espaciado-m);
     background-color: var(--color-azul-noche);
+}
+h1{
+    color: var(--color-crema);
 }
 #logo {
     display: block;
@@ -90,7 +93,7 @@ main {
 parte1, portada*/
 #introduccion{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 2fr 1fr;
     background-color: var(--color-verde-ruta);
     color: var(--color-crema);
     gap: var(--espaciado-s);
@@ -241,4 +244,7 @@ input[type="checkbox"] {
 }
 fieldset {
     margin-bottom: var(--espaciado-l);
+}
+h1,h2,h3{
+    font-family: var(--fuente-titulo);
 }
