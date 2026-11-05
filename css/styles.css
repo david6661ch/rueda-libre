@@ -47,10 +47,18 @@ body {
 header{
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     align-items: center;
     padding: var(--espaciado-s);
     color: var(--color-crema);
     background-color: var(--color-verde-ruta);
+=======
+    padding: var(--espaciado-m);
+    background-color: var(--color-azul-noche);
+>>>>>>> 68b8b386e7faadf5f83b31b6e8a06cda4fc1c45a
+}
+h1{
+    color: var(--color-crema);
 }
 #logo {
     display: block;
@@ -96,7 +104,7 @@ main {
 parte1, portada*/
 #introduccion{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 2fr 1fr;
     background-color: var(--color-verde-ruta);
     color: var(--color-crema);
     gap: var(--espaciado-s);
@@ -248,6 +256,7 @@ input[type="checkbox"] {
 fieldset {
     margin-bottom: var(--espaciado-l);
 }
+<<<<<<< HEAD
 #contacto{
     display: grid;
     grid-template-columns: 2fr 1fr ;
@@ -259,3 +268,8 @@ fieldset {
     grid-template-rows: repeat(autofit, 1fr);
     gap: var(--espaciado-m)
 }
+=======
+h1,h2,h3{
+    font-family: var(--fuente-titulo);
+}
+>>>>>>> 68b8b386e7faadf5f83b31b6e8a06cda4fc1c45a
