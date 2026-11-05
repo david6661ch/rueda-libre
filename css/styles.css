@@ -47,15 +47,13 @@ body {
 header{
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
     align-items: center;
     padding: var(--espaciado-s);
     color: var(--color-crema);
     background-color: var(--color-verde-ruta);
-=======
     padding: var(--espaciado-m);
     background-color: var(--color-azul-noche);
->>>>>>> 68b8b386e7faadf5f83b31b6e8a06cda4fc1c45a
+
 }
 h1{
     color: var(--color-crema);
@@ -216,7 +214,6 @@ table.tabla-de-datos {
     background-color: var(--color-azul-noche);
     color: var(--color-crema);
 }
-
 .tabla-de-datos tbody th {
     font-weight: 600;
 }
@@ -256,7 +253,6 @@ input[type="checkbox"] {
 fieldset {
     margin-bottom: var(--espaciado-l);
 }
-<<<<<<< HEAD
 #contacto{
     display: grid;
     grid-template-columns: 2fr 1fr ;
@@ -268,8 +264,7 @@ fieldset {
     grid-template-rows: repeat(autofit, 1fr);
     gap: var(--espaciado-m)
 }
-=======
 h1,h2,h3{
     font-family: var(--fuente-titulo);
 }
->>>>>>> 68b8b386e7faadf5f83b31b6e8a06cda4fc1c45a
+
