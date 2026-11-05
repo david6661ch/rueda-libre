@@ -52,8 +52,6 @@ header{
     color: var(--color-crema);
     background-color: var(--color-verde-ruta);
     padding: var(--espaciado-m);
-    background-color: var(--color-azul-noche);
-
 }
 h1{
     color: var(--color-crema);
