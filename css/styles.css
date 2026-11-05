@@ -20,9 +20,13 @@
     box-sizing: border-box;
 }
 /*Usos específicos generales*/
-/*Color de los vínculos(Links"*/
+/*Color de los vínculos(Links)*/
 a {
     color: var(--color-verde-ruta)
+}
+/* fuente de los titulos*/
+h1,h2,h3{
+    font-family: var(--fuente-titulo);
 }
 body > header,
 body > nav,
@@ -42,9 +46,11 @@ body {
 /*header*/
 header{
     display: flex;
-    justify-content: space-evenly;
-    padding: var(--espaciado-m);
-    background-color: var(--color-azul-noche);
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--espaciado-s);
+    color: var(--color-crema);
+    background-color: var(--color-verde-ruta);
 }
 #logo {
     display: block;
@@ -241,4 +247,15 @@ input[type="checkbox"] {
 }
 fieldset {
     margin-bottom: var(--espaciado-l);
+}
+#contacto{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    gap:var(--espaciado-m);
+}
+#tu-reserva{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(autofit, 1fr);
+    gap: var(--espaciado-m)
 }

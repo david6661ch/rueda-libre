@@ -10,6 +10,7 @@
 <body>
     <header>
         <img id="logo" src="../img/logo.jpeg" alt="Logo de Rueda Libre">
+        <h1>Rueda Libre</h1>
     </header>
     <nav id="menu">
       <a href="../index.html">Inicio</a>
@@ -32,7 +33,7 @@
                 <li>Recibe tu bici con casco y candado, y a pedalear.</li>
             </ol>
     </article>
-    <form action="#" method="post">
+    <form id="formulario" action="#" method="post">
     <fieldset>
         <legend><h2>Tus datos</h2></legend>
 
@@ -44,6 +45,7 @@
                 <label for="documento">Número de documento</label>
                 <input type="text" id="documento" name="documento" inputmode="numeric" pattern="[0-9]{6,10}" maxlength="10" title="Solo números, entre 6 y 10 dígitos" required>
             </p>
+        <section id="contacto">
             <p>
                 <label for="correo">Correo electrónico</label>
                 <input type="email" id="correo" name="correo" required>
@@ -52,9 +54,11 @@
                 <label for="celular">Celular</label>
                 <input type="tel" id="celular" name="celular" inputmode="numeric" pattern="3[0-9]{9}" maxlength="10" title="Celular de 10 dígitos que empieza por 3" required>
             </p>
+        </section>
     </fieldset>
-    <fieldset>
+    <fieldset id="tu-reserva">
         <legend><h2>Tu alquiler</h2></legend>
+        
             <p>
                 <label for="fecha">Fecha del alquiler</label>
                 <input type="date" id="fecha" name="fecha" inputmode="numeric" min="2026-11-01" max="2026-12-31" required>
