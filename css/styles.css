@@ -44,52 +44,62 @@ body {
     background-color: var(--color-crema);
 }
 /*header*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--espaciado-s);
-    color: var(--color-crema);
-    background-color: var(--color-verde-ruta);
+    flex-wrap: wrap;
+    gap: var(--espaciado-m);
+
     padding: var(--espaciado-m);
-}
-h1{
+    background-color: var(--color-verde-ruta);
     color: var(--color-crema);
+}
+#marca {
+    display: flex;
+    align-items: center;
+    gap: var(--espaciado-m);
+}
+
+#marca h1 {
+    margin: 0;
+    color: var(--color-crema);
+    font-family: var(--fuente-titulo);
 }
 #logo {
     display: block;
-    max-width: 10rem;
-    max-height: 10rem;
+    width: 5rem;
+    height: auto;
 }
-nav#menu{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: var(--color-crema);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--espaciado-m);
-    padding: var(--espaciado-s);
+header .navbar {
+    padding: 0;
 }
-#menu a{
-    color: var(--color-azul-noche);
+
+#menu {
     font-family: var(--fuente-titulo);
+    background-color: var(--color-verde-ruta);
+}
+#menu .nav-link {
+    color: var(--color-crema);
     font-weight: 600;
-    text-decoration: none;
-    padding: var(--espaciado-s) var(--espaciado-m);
-    border-radius: 6px;
 }
-#menu a:hover{
-    background-color: var(--color-naranja-pedal);
-    color: var(--color-azul-noche);
+
+#menu .nav-link:hover {
+    color: var(--color-naranja-pedal);
 }
-#menu a:focus {
-    outline: 3px solid var(--color-verde-ruta);
-    outline-offset: 2px;
+
+/* HAMBURGER BUTTON */
+#menu .navbar-toggler {
+    border: 2px solid var(--color-crema);
+    margin-left: auto;
 }
-#menu a.activo {
-    border-bottom: 3px solid var(--color-verde-ruta);
+
+#menu .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem var(--color-naranja-pedal);
+}
+#menu .nav-link.active {
+    color: var(--color-naranja-pedal);
+    font-weight: 700;
 }
 /*Final del header*/
 /*main*/
@@ -265,4 +275,22 @@ fieldset {
 h1,h2,h3{
     font-family: var(--fuente-titulo);
 }
+@media (max-width: 991.98px) {
 
+    header .navbar {
+        margin-left: auto;
+    }
+
+    #menu .navbar-collapse {
+        width: 100%;
+    }
+
+    #menu .navbar-nav {
+        padding-top: var(--espaciado-m);
+    }
+
+    #menu .nav-link {
+        padding: var(--espaciado-s);
+    }
+
+}
