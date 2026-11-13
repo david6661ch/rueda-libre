@@ -167,12 +167,85 @@ parte1, portada*/
 #carrusel-inicio .carousel-control-next {
     z-index: 3;
 }
+/*Página actual en el menú*/
+#menu .nav-link.active,
+#menu .nav-link[aria-current="page"] {
+    color: var(--color-naranja-pedal);
+    border-bottom: 3px solid var(--color-naranja-pedal);
+}
+
+/*Secciones informativas de inicio*/
+.quienes-somos,
+.como-alquilar-nuestros-beneficios {
+    background-color: #e8edf0;
+    margin-block: var(--espaciado-xl);
+    border-radius: 12px;
+}
+
+.seccion-etiqueta {
+    font-family: var(--fuente-titulo);
+    color: var(--color-verde-ruta);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.seccion-subtitulo {
+    color: var(--color-gris-asfalto);
+    max-width: 42rem;
+    font-size: 1.1rem;
+}
+
+.tarjeta-informativa {
+    background-color: var(--color-crema);
+    border: 1px solid rgba(30, 122, 79, 0.15);
+    border-radius: 16px;
+    color: var(--color-azul-noche);
+    box-shadow: 0 6px 18px rgba(20, 33, 61, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-informativa:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(20, 33, 61, 0.12);
+}
+
+.tarjeta-informativa .card-title {
+    color: var(--color-azul-noche);
+    font-weight: 700;
+}
+
+.tarjeta-informativa .card-text {
+    color: var(--color-gris-asfalto);
+}
+
+.icono-tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+    background-color: #ffffff;
+    color: var(--color-verde-ruta);
+    font-size: 2rem;
+}
+
+footer .encuentranos {
+    min-width: 12rem;
+}
+
+footer .encuentranos a:hover {
+    color: var(--color-crema);
+}
+
 /*quienes somos */
 
 /*tarjetas de servicios*/
 #nuestros-servicios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: var(--espaciado-l);
 }
 .tarjeta {
@@ -352,17 +425,55 @@ button.boton-formulario:focus{
     cursor: pointer;
 }
 /*pie de página*/
+
+/* Pie de página */
 footer {
-    color: var(--color-crema);
+    width: 100%;
     background-color: var(--color-verde-ruta);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 2rem;
+    color: var(--color-crema);
 }
-footer a{
-    color:var(--color-naranja-pedal);
+
+/* Títulos del footer */
+footer h2 {
+    color: var(--color-naranja-pedal);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--espaciado-m);
 }
+
+footer h3 {
+    color: var(--color-crema);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Textos */
+footer p {
+    margin-bottom: var(--espaciado-s);
+}
+
+/* Enlaces */
+footer a {
+    color: var(--color-crema);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-naranja-pedal);
+    text-decoration: underline;
+}
+
+/* Iconos */
+footer .bi {
+    margin-right: var(--espaciado-s);
+    color: var(--color-naranja-pedal);
+}
+
+/* Separador inferior */
+footer .border-top {
+    border-color: var(--color-crema) !important;
+}
+
 /*botón flotante en las páginas*/
 .boton-flotante{
     position: fixed;
@@ -474,4 +585,54 @@ h1,h2,h3{
         padding: var(--espaciado-s);
     }
 
+}
+
+
+/* Mejoras de Tarifas y Reservas: identidad Rueda Libre */
+.pagina-interior { width: 100%; }
+.encabezado-interior { background: #e8edf0; border-radius: 1rem; }
+.encabezado-interior h2 { color: var(--color-azul-noche); font-weight: 700; }
+.bloque-interior { background: #fff; border: 1px solid rgba(30,122,79,.16); border-radius: 1rem; box-shadow: 0 6px 20px rgba(20,33,61,.06); }
+.bloque-interior h3, .bloque-interior h2 { color: var(--color-azul-noche); }
+.pagina-interior .table { --bs-table-bg: transparent; --bs-table-striped-bg: #f3f7f4; --bs-table-hover-bg: #e7f2eb; --bs-table-color: var(--color-azul-noche); margin-bottom: 0; }
+.pagina-interior .table thead th { background: var(--color-azul-noche); color: var(--color-crema); white-space: nowrap; }
+.pagina-interior .table th, .pagina-interior .table td { padding: .9rem 1rem; }
+.pagina-interior .table-responsive { border-radius: .75rem; }
+.pagina-interior .aviso-tarifas { background: #e8edf0; border-left: 4px solid var(--color-verde-ruta); }
+.paso-reserva .card { background: var(--color-crema); border: 1px solid rgba(30,122,79,.18); border-radius: 1rem; }
+.paso-reserva .numero-paso { display: inline-flex; justify-content: center; align-items: center; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: var(--color-verde-ruta); color: white; font-weight: 700; }
+#formulario.formulario-bootstrap { max-width: none; margin: 0; background: #fff; }
+#formulario.formulario-bootstrap fieldset { display: block; border-color: #d6e4dc; }
+#formulario.formulario-bootstrap .form-control, #formulario.formulario-bootstrap .form-select { background: var(--color-crema); border-color: #b6c9bf; }
+#formulario.formulario-bootstrap .form-check-input { width: 1.1rem; height: 1.1rem; padding: 0; margin-right: .5rem; }
+#formulario.formulario-bootstrap .form-check-label { display: inline; margin: 0; }
+#formulario.formulario-bootstrap .form-check { display: flex; align-items: center; }
+#formulario.formulario-bootstrap .form-text { color: var(--color-gris-asfalto); }
+
+/* Mantener el botón original dentro del formulario Bootstrap */
+#formulario.formulario-bootstrap button.boton-formulario {
+    display: block;
+    width: fit-content;
+    margin: var(--espaciado-m) auto;
+    padding: 0.85rem 2rem;
+    background-color: var(--color-verde-ruta);
+    color: var(--color-crema);
+    border: 2px solid var(--color-verde-ruta);
+    border-radius: 8px;
+    font-family: var(--fuente-titulo);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#formulario.formulario-bootstrap button.boton-formulario:hover {
+    background-color: var(--color-naranja-pedal);
+    color: var(--color-azul-noche);
+}
+#formulario.formulario-bootstrap button.boton-formulario:focus {
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 2px;
+}
+@media (max-width: 575.98px) {
+    #formulario.formulario-bootstrap button.boton-formulario { width: 100%; }
 }

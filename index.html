@@ -16,7 +16,7 @@
             <img id="logo" src="img/logo.jpeg" alt="Logo de Rueda Libre">
             <h1>Rueda Libre</h1>
         </div>
-        <nav class="navbar navbar-expand-lg" >
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid" id="menu">
             <!-- Hamburger button -->
             <button
@@ -34,7 +34,7 @@
             <!-- Navigation links -->
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item" id="opcion">
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
@@ -48,10 +48,8 @@
             </div>
         
         </div>
-
+        </nav>
     </header>
-    
-    </nav>
     <main>
     <h2>Alquiler de bicicletas en Medellín</h2>
     <article id="introduccion">
@@ -114,15 +112,45 @@
     </div>
 
 </article>
-    <article class="quienes-somos text-center p-4">
-        <h2 class="mb-4">¿Quiénes somos?</h2>
-        <p>En Rueda Libre creemos que Medellín se conoce mejor sobre dos ruedas. Somos un equipo de ciclistas apasionados por nuestra ciudad, y nació de una idea sencilla: que cualquiera, sea local o visitante, pueda recorrerla a su ritmo, con una bici en buen estado y con la tranquilidad de contar con alguien que conoce cada ruta.</p>
-        <p>Ponemos a tu disposición bicicletas urbanas, de montaña y eléctricas, cascos y candados, además de recorridos guiados por personas que viven aquí y te muestran los rincones que no salen en las guías turísticas. Nuestro taller básico mantiene todo en orden para que solo te preocupes por pedalear. </p>
-        <p>Nuestra misión es acercarte a la ciudad de la eterna primavera de una forma segura, flexible y cercana.</p>
+    <article class="quienes-somos text-center py-5 px-4">
+        <div class="container">
+            <p class="seccion-etiqueta mb-2">CONOCE RUEDA LIBRE</p>
+            <h2 class="mb-3">¿Quiénes somos?</h2>
+            <p class="seccion-subtitulo mx-auto mb-5">Nuestra pasión es conectar a las personas con Medellín a través de la bicicleta.</p>
+            <div class="row g-4">
+                <section class="col-12 col-md-4">
+                    <div class="card tarjeta-informativa h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-bicycle" aria-hidden="true"></i></div>
+                            <h3 class="card-title h5 mb-3">Nuestra pasión</h3>
+                            <p class="card-text">Somos ciclistas apasionados por Medellín. Queremos que locales y visitantes descubran la ciudad a su propio ritmo.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 col-md-4">
+                    <div class="card tarjeta-informativa h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-tools" aria-hidden="true"></i></div>
+                            <h3 class="card-title h5 mb-3">Lo que ofrecemos</h3>
+                            <p class="card-text">Bicicletas listas para rodar, cascos, candados, recorridos con guías locales y un taller de ajustes básicos.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-12 col-md-4">
+                    <div class="card tarjeta-informativa h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-heart" aria-hidden="true"></i></div>
+                            <h3 class="card-title h5 mb-3">Nuestra misión</h3>
+                            <p class="card-text">Acercarte a la ciudad de la eterna primavera de una manera segura, flexible y cercana.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </article>
     <div class="container">
         <h2 class="text-center">Nuestros servicios</h2>
-    <article class="row" id="nuestros-servicios">
+    <article id="nuestros-servicios">
         <section class="tarjeta">
             <h3>Alquiler de bicicletas</h3>
             <figure><img id="imagen-de-servicio" src="img/renta-tu-bici.jpg" alt=""></figure>
@@ -201,46 +229,141 @@
             <a class="d-inline-block mb-3" id="boton-cta" href="paginas/reservas.html">reservar</a>
         </section>
     </article>
-    <article class="como-alquilar-nuestros-beneficios p-4">
-        <h2>Cómo alquilar y nuestros beneficios</h2>
-        <section class="como-alquilar">
-            <h3>¿Cómo alquilar?</h3>
-            <ol>
-                <li>Elige tu bici y tu plan: por horas, por día o por estadía.</li>
-                <li>Reserva y confirma tus datos.</li>
-                <li>Recibe tu bici con casco y candado.</li>
-                <li>Pedalea y devuélvela en el punto y hora acordados.</li>
-            </ol>
-        </section>
-        <section class="nuestros-beneficios p-4 container">
-            <h3 class="text-center p-4">Nuestros beneficios</h3>
-            <ul class="row g-4">
-                <li class="col-12 col-md-4"><i class="bi bi-leaf fs-1 text-success" aria-hidden="true"></i>Todo incluido: la bici viene lista, con casco y candado, así que no necesitas llevar nada.</li>
-                <li class="col-12 col-md-4"><i class="bi bi-bicycle fs-1 text-success" aria-hidden="true"></i>Flexibilidad total: alquila por horas, por día o por toda tu estadía, según tu ritmo.</li>
-                <li class="col-12 col-md-4"><i class="bi bi-shield-check fs-1 text-success" aria-hidden="true"></i>Rutas recomendadas por locales: descubre Medellín con sugerencias reales, desde recorridos tranquilos hasta subidas con adrenalina.</li>
-            </ul>
-        </section>
-
-    </article>
-    <article class="encuentranos text-center py-5">
+    <article class="como-alquilar-nuestros-beneficios py-5 px-4">
         <div class="container">
-            <h2>Encuéntranos</h2>
-            <p><a href="https://maps.app.goo.gl/yYUBQcJ55E64RCni9" target="_blank">¿Cómo llegar?</a></p>
-            <p><a href="mailto:hola@ruedalibre.co">Para más información. </a></p>
+            <p class="seccion-etiqueta text-center mb-2">FÁCIL Y SIN COMPLICACIONES</p>
+            <h2 class="text-center mb-2">¿Cómo alquilar?</h2>
+            <p class="seccion-subtitulo text-center mx-auto mb-5">Tu próxima aventura comienza en cuatro pasos sencillos.</p>
+            <section class="como-alquilar">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card tarjeta-informativa h-100 text-center">
+                            <div class="card-body p-4">
+                                <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-search" aria-hidden="true"></i></div>
+                                <h3 class="card-title h5">Elige tu bici</h3>
+                                <p class="card-text">Escoge tu bicicleta y el plan que mejor se adapte a tu tiempo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card tarjeta-informativa h-100 text-center">
+                            <div class="card-body p-4">
+                                <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-calendar-check" aria-hidden="true"></i></div>
+                                <h3 class="card-title h5">Reserva</h3>
+                                <p class="card-text">Confirma tu reserva y proporciona tus datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card tarjeta-informativa h-100 text-center">
+                            <div class="card-body p-4">
+                                <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-shield-check" aria-hidden="true"></i></div>
+                                <h3 class="card-title h5">Recibe tu bici</h3>
+                                <p class="card-text">Te entregamos la bicicleta con casco y candado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="card tarjeta-informativa h-100 text-center">
+                            <div class="card-body p-4">
+                                <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+                                <h3 class="card-title h5">Disfruta y devuelve</h3>
+                                <p class="card-text">Pedalea y devuelve la bici en el punto y hora acordados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="nuestros-beneficios pt-5">
+                <p class="seccion-etiqueta text-center mb-2">PEDALEA CON TRANQUILIDAD</p>
+                <h2 class="text-center mb-2">Nuestros beneficios</h2>
+                <p class="seccion-subtitulo text-center mx-auto mb-5">Todo lo que necesitas para disfrutar el recorrido.</p>
+                <div class="row g-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card tarjeta-informativa h-100 text-center">
+                            <div class="card-body p-4">
+                                <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-shield-check" aria-hidden="true"></i></div>
+                                <h3 class="card-title h5">Todo incluido</h3>
+                                <p class="card-text">Tu bicicleta viene lista, con casco y candado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card tarjeta-informativa h-100 text-center">
+                            <div class="card-body p-4">
+                                <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-bicycle" aria-hidden="true"></i></div>
+                                <h3 class="card-title h5">Flexibilidad total</h3>
+                                <p class="card-text">Alquila por horas, por día o por toda tu estadía.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card tarjeta-informativa h-100 text-center">
+                            <div class="card-body p-4">
+                                <div class="icono-tarjeta mx-auto mb-3"><i class="bi bi-map" aria-hidden="true"></i></div>
+                                <h3 class="card-title h5">Rutas locales</h3>
+                                <p class="card-text">Explora Medellín con recomendaciones de quienes conocen la ciudad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </article>
     </main>
-    <footer>
-        <article class="marca"><strong><h2>Rueda Libre</strong></h2></article>
-        <article class="contacto">
-            <h2>¿Necesitas ayuda?</h2>
-            <p>Escríbenos a <a href="mailto:hola@ruedalibre.co">hola@ruedalibre.co</a> y te respondemos lo antes posible.</p>
-        </article>
-        <article class="horario">
-            <p>Horario de atención: lunes a viernes de 7:00 a. m. a 7:00 p. m.; sábados, domingos y festivos de 6:00 a. m. a 2:00 p. m.</p>
-            <p><small>&copy; 2026</small></p>
-        </article> 
-    </footer>
+    
+<footer class="py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Primera columna: marca y horario -->
+            <article class="col-12 col-md-4">
+                <h2>Rueda Libre</h2>
+
+                <div class="horario mt-3">
+                    <h3>Horario de atención</h3>
+                    <p>
+                        Lunes a viernes de 7:00 a. m. a 7:00 p. m.
+                    </p>
+                    <p>
+                        Sábados, domingos y festivos de 6:00 a. m. a 2:00 p. m.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Segunda columna: ubicación -->
+            <article class="encuentranos col-12 col-md-4">
+                <h2>Encuéntranos</h2>
+                <p>Visítanos y comienza tu próxima aventura.</p>
+                <p>
+                    <a href="https://maps.app.goo.gl/yYUBQcJ55E64RCni9" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        ¿Cómo llegar?
+                    </a>
+                </p>
+            </article>
+
+            <!-- Tercera columna: contacto -->
+            <article class="contacto col-12 col-md-4">
+                <h2>¿Necesitas ayuda?</h2>
+                <p>Escríbenos y te respondemos lo antes posible.</p>
+                <p>
+                    <a href="mailto:hola@ruedalibre.co">
+                        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                        hola@ruedalibre.co
+                    </a>
+                </p>
+            </article>
+
+        </div>
+
+        <!-- Derechos de autor -->
+        <div class="text-center mt-4 pt-3 border-top">
+            <p class="mb-0"><small>&copy; 2026 Rueda Libre. Todos los derechos reservados.</small></p>
+        </div>
+    </div>
+</footer>
+
     <a class="boton-flotante" href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">Contáctanos</a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
