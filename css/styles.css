@@ -97,10 +97,7 @@ header .navbar {
 #menu .navbar-toggler:focus {
     box-shadow: 0 0 0 0.15rem var(--color-naranja-pedal);
 }
-#menu .nav-link.active {
-    color: var(--color-naranja-pedal);
-    font-weight: 700;
-}
+
 /*Final del header*/
 /*main*/
 main {
@@ -145,23 +142,163 @@ parte1, portada*/
     object-fit: contain;
 }
 
-/*boton de envío del formulario*/
-button.boton-formulario{
+/*formulario*/
+#formulario {
+    width: 100%;
+    max-width: 65rem;
+    margin: var(--espaciado-xl) auto;
+    padding: var(--espaciado-l);
+    background-color: white;
+    border: 2px solid var(--color-verde-ruta);
+    border-radius: 12px;
+}
+#formulario fieldset {
+    min-width: 0;
+    margin-bottom: var(--espaciado-l);
+    padding: var(--espaciado-m);
+    border: 1px solid var(--color-gris-asfalto);
+    border-radius: 8px;
+}
+#formulario legend {
+    float: none;
+    width: auto;
+    padding: 0 var(--espaciado-s);
     color: var(--color-verde-ruta);
-    background-color: var(--color-crema);
-    border-bottom: 3px solid var(--color-verde-ruta);
-    border-radius: 6px;
-    padding: var(--espaciado-m) var(--espaciado-l);
-    font-size: 16px;
 }
 
-button.boton-formulario:hover{
+#formulario legend h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+input, select, textarea {
+    width: 100%;
+    padding: var(--espaciado-s);
+}
+#formulario input:not([type="checkbox"]),
+#formulario select,
+#formulario textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--color-gris-asfalto);
+    border-radius: 6px;
+    background-color: var(--color-crema);
+    color: var(--color-azul-noche);
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+}
+#formulario input:focus,
+#formulario select:focus,
+#formulario textarea:focus {
+    outline: 2px solid var(--color-verde-ruta);
+    outline-offset: 2px;
+    border-color: var(--color-verde-ruta);
+}
+#formulario label {
+    display: block;
+    margin-bottom: var(--espaciado-s);
+    font-weight: 600;
+    color: var(--color-azul-noche);
+}
+#contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espaciado-m);
+}
+
+@media (min-width: 768px) {
+    #contacto {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+#tu-reserva {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--espaciado-m);
+}
+@media (min-width: 768px) {
+    #tu-reserva {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    #tu-reserva {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.campos-reserva {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--espaciado-m);
+}
+
+@media (min-width: 768px) {
+    .campos-reserva {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1200px) {
+    .campos-reserva {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+button.boton-formulario {
+    display: block;
+    width: fit-content;
+    margin: var(--espaciado-m) auto;
+    padding: 0.85rem 2rem;
+
     background-color: var(--color-verde-ruta);
     color: var(--color-crema);
+
+    border: 2px solid var(--color-verde-ruta);
+    border-radius: 8px;
+
+    font-family: var(--fuente-titulo);
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
+button.boton-formulario:hover {
+    background-color: var(--color-naranja-pedal);
+    color: var(--color-azul-noche);
+}
+
 button.boton-formulario:focus{
     outline: 3px solid var(--color-azul-noche);
     outline-offset: 2px;
+}
+@media (max-width: 575.98px) {
+    #formulario {
+        padding: var(--espaciado-s);
+    }
+
+    #formulario fieldset {
+        padding: var(--espaciado-s);
+    }
+
+    button.boton-formulario {
+        width: 100%;
+    }
+}
+#formulario input[type="checkbox"] {
+    width: auto;
+    margin-right: var(--espaciado-s);
+    accent-color: var(--color-verde-ruta);
+}
+
+#formulario label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: var(--espaciado-s);
+    cursor: pointer;
 }
 /*pie de página*/
 footer {
@@ -261,17 +398,9 @@ input[type="checkbox"] {
 fieldset {
     margin-bottom: var(--espaciado-l);
 }
-#contacto{
-    display: grid;
-    grid-template-columns: 2fr 1fr ;
-    gap:var(--espaciado-m);
-}
-#tu-reserva{
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(autofit, 1fr);
-    gap: var(--espaciado-m)
-}
+
+
+
 h1,h2,h3{
     font-family: var(--fuente-titulo);
 }
