@@ -105,18 +105,67 @@ main {
 }
 /*sección exclusiva de index.html 
 parte1, portada*/
-#introduccion{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+/* Carrusel de introducción */
+#introduccion {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
     background-color: var(--color-verde-ruta);
-    color: var(--color-crema);
-    gap: var(--espaciado-s);
 }
-#introduccion p:first-child{
-    text-align:center;
-    display: flex;
-    align-items: center;
-    padding: var(--espaciado-s);
+
+/* Imágenes del carrusel */
+#carrusel-inicio .carousel-item img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+/* Oscurecimiento de las imágenes */
+#carrusel-inicio .carousel-item {
+    position: relative;
+}
+
+#carrusel-inicio .carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(20, 33, 61, 0.9),
+        rgba(20, 33, 61, 0.1)
+    );
+    pointer-events: none;
+}
+
+/* Texto del carrusel */
+#carrusel-inicio .carousel-caption {
+    z-index: 2;
+    color: var(--color-crema);
+    padding: var(--espaciado-l);
+}
+
+#carrusel-inicio .carousel-caption h2 {
+    color: var(--color-naranja-pedal);
+    font-family: var(--fuente-titulo);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#carrusel-inicio .carousel-caption p {
+    font-family: var(--fuente-texto);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Indicadores */
+#carrusel-inicio .carousel-indicators button {
+    background-color: var(--color-naranja-pedal);
+}
+
+/* Controles */
+#carrusel-inicio .carousel-control-prev,
+#carrusel-inicio .carousel-control-next {
+    z-index: 3;
 }
 /*tarjetas de servicios*/
 #nuestros-servicios {
@@ -307,6 +356,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 2rem;
 }
 footer a{
     color:var(--color-naranja-pedal);
@@ -371,7 +421,7 @@ a#boton-cta{
     border: 1px solid var(--color-verde-ruta);
     border-bottom: 3px solid var(--color-verde-ruta);
     border-radius: 16px;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     font-size: 16px;
     text-decoration: none;
 }
