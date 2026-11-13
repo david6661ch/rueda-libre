@@ -167,6 +167,8 @@ parte1, portada*/
 #carrusel-inicio .carousel-control-next {
     z-index: 3;
 }
+/*quienes somos */
+
 /*tarjetas de servicios*/
 #nuestros-servicios {
     display: grid;
